@@ -1,0 +1,25 @@
+$header-height = 50px
+
+html
+body
+	position relative
+	margin 0 auto
+	width 100%
+	height 100%
+	font-size $font-base
+	background-color $gray-light-two
+
+*
+	box-sizing border-box
+
+.container-fixed
+	height 100%
+
+	&--header
+		background-color $blue-dark
+		height $header-height
+		width 100%
+		position relative
+
+	&--content
+		position relative

@@ -1,0 +1,13 @@
+/server/**/*.suo
+/server/**/*.user
+/server/**/*.pubxml
+/server/**/bin
+/server/**/logs
+/server/**/obj
+/server/**/Log
+/server/**/packages
+/client/node_modules
+/client/bower_components
+/client/build
+/client/test/coverage
+/client/test/report

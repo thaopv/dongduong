@@ -1,0 +1,14 @@
+<div class="col-xs-12 col-sm-12 tab">
+	<div class="tab__title">
+		<div class="tab-list text-capitalize tab__title--text {{tab.activated ? 'tab__active' : 'tab__normal'}}"
+			data-ng-repeat="tab in tabs track by $index"
+			data-handle-tab="{{tab}}">
+			<span>{{tab.title}}</span>
+		</div>
+	</div>
+	<div class="tab__content">
+		<div class="col-xs-12 col-sm-12 tab__content--template"
+			data-ng-include="data.template"
+			onload="resolves = data.resolves"></div>
+	</div>
+</div>

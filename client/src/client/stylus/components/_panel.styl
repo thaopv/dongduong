@@ -1,0 +1,46 @@
+_panel_variant(__BORDER, __HEADING_TEXT_COLOR, __HEADING_BG_COLOR, __HEADING_BORDER)
+	border-color __BORDER
+
+	& > .panel-header, & > .panel-footer
+		color __HEADING_TEXT_COLOR
+		background-color __HEADING_BG_COLOR
+		border-color __HEADING_BORDER
+
+.panel
+	background-color $panel-bg
+	border 1px solid transparent
+
+	&.panel-default
+		_panel_variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border)
+
+	&.panel-primary
+		_panel_variant($panel-primary-boder, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-boder)
+
+	&.panel-success
+		_panel_variant($panel-success-boder, $panel-success-text, $panel-success-heading-bg, $panel-success-boder)
+
+	&.panel-info
+		_panel_variant($panel-info-boder, $panel-info-text, $panel-info-heading-bg, $panel-info-boder)
+
+	&.panel-warning
+		_panel_variant($panel-warning-boder, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-boder)
+
+	&.panel-danger
+		_panel_variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border)
+
+.panel-body
+	clearfix()
+	padding $panel-body-padding
+
+.panel-header
+	padding $panel-heading-padding
+	border-bottom 1px solid transparent
+
+	&__close
+		position absolute
+		right 0
+		top 0
+
+.panel-footer
+	padding $panel-footer-padding
+	border-top 1px solid transparent

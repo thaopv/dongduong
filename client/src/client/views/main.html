@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html data-ng-app="ecommerce">
+	<head>
+		<meta charset="utf-8">
+		<title>Công ty CP Công Nghiệp và Dịch Vụ Đông Dương</title>
+
+		<!-- this comment is key for inject css file to this -->
+		<!-- injector:css -->
+		<!-- endinjector -->
+
+	</head>
+	<body>
+		<div class="container-fixed">
+			<div class="container-fixed--header"
+				data-ng-include="'/src/client/views/shared/header.tpl.html'"></div>
+
+			<div class="container-fixed--content container-fluid">
+				<div data-ng-view data-ng-cloak></div>
+			</div>
+		</div>
+
+		<!-- this comment is key for inject js file to this -->
+		<!-- injector:js -->
+		<!-- endinjector -->
+	</body>
+</html>

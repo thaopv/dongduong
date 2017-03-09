@@ -1,0 +1,49 @@
+$height-title = 40px
+$border-line = 1px
+$border-box-radius = 3px
+
+.tab
+	height 100%
+	width 100%
+
+	&__title
+		position absolute
+		left $margin-block
+		z-index $layout-1
+		height $height-title
+
+		&--text
+			height $height-title
+			line-height $height-title
+			padding 0 (2 * $padding-inline)
+			background-color $gray-light-one
+			color $white
+			cursor pointer
+			border $border-line solid $blue-dark
+			border-bottom none
+			border-top-right-radius $border-box-radius
+			border-top-left-radius $border-box-radius
+			float left
+			margin-right (2 * $margin-block)
+
+			&:hover
+				background-color $blue-dark
+				color $white
+
+	&__content
+		border-top $border-line solid $blue-dark
+		padding $padding-outline
+		position absolute
+		top $height-title
+		bottom 0
+		left 0
+		right 0
+
+		&--template
+			height 100%
+
+	&__active
+		background-color $blue-dark
+		color $white
+		cursor default
+
