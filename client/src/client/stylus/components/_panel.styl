@@ -1,3 +1,7 @@
+$panel-default-text = #333
+$panel-default-border = #ddd
+$panel-default-heading-bg = #f5f5f5
+
 _panel_variant(__BORDER, __HEADING_TEXT_COLOR, __HEADING_BG_COLOR, __HEADING_BORDER)
 	border-color __BORDER
 
@@ -7,33 +11,18 @@ _panel_variant(__BORDER, __HEADING_TEXT_COLOR, __HEADING_BG_COLOR, __HEADING_BOR
 		border-color __HEADING_BORDER
 
 .panel
-	background-color $panel-bg
+	background-color $white
 	border 1px solid transparent
 
 	&.panel-default
 		_panel_variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border)
 
-	&.panel-primary
-		_panel_variant($panel-primary-boder, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-boder)
-
-	&.panel-success
-		_panel_variant($panel-success-boder, $panel-success-text, $panel-success-heading-bg, $panel-success-boder)
-
-	&.panel-info
-		_panel_variant($panel-info-boder, $panel-info-text, $panel-info-heading-bg, $panel-info-boder)
-
-	&.panel-warning
-		_panel_variant($panel-warning-boder, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-boder)
-
-	&.panel-danger
-		_panel_variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border)
-
 .panel-body
 	clearfix()
-	padding $panel-body-padding
+	padding $padding-outline
 
 .panel-header
-	padding $panel-heading-padding
+	padding $padding-outline (2 * $padding-outline)
 	border-bottom 1px solid transparent
 
 	&__close

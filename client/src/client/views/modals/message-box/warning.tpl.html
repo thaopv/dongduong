@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+	<div class="panel-header text-center">
+		<button class="panel-header__close" data-ng-click="cancel()">
+			<span>x</span>
+		</button>
+	</div>
+	<div class="panel-body text-justify">
+		<p data-ng-if="unsafe" data-ng-bind-html="::message"></p>
+		<p data-ng-if="!unsafe">{{::message}}</p>
+	</div>
+	<div class="panel-footer text-center">
+		<button class="btn btn-danger"
+			data-ng-click="cancel()"
+			data-auto-focus>{{::'COM_BUTTON_CLOSE'|translate}}</button>
+	</div>
+</div>

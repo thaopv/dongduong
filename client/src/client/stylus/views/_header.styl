@@ -1,25 +1,40 @@
 .header
 	width 100%
-	height 100%
 
-	&--left
-		&__company
-			color $white
-			cursor pointer
+	&--top
+		padding (2 * $padding-outline) 0
 
-	&--center
-		text-align center
+		&__company-logo
+			width 128px
+
+		&__company-name
+			color $purple-light-1
+			font-weight bold
+			margin-left $margin-block
+			display inline-block
+
+	&--nav
+		background-color $blue
 
 		&__menu
-			cursor pointer
-			color $gray-light-two
+			margin 0
+			padding 0
+			list-style none
 
-			&:hover
-				text-decoration underline
-				color $white
+			&__item
+				margin 0
+				float left
+				border-right 1px solid $blue-light-1
 
-	&--right
-		text-align right
+				a
+					display block
+					padding $padding-outline (2 * $padding-outline)
+					text-decoration none
+					color $white
 
-		&__email
-			color $white
+					&:hover
+						background-color $blue-light-1
+						color $yellow-light-1
+
+				&:first-child
+					border-left 1px solid $blue-light-1

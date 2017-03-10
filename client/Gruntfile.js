@@ -368,6 +368,7 @@ module.exports = function(grunt) {
 		'ngtemplates:html',
 		'stylus:dev',
 		'copy:html',
+		'copy:img',
 		'injector:dev',
 		'develop:dev',
 		'watch',

@@ -1,0 +1,16 @@
+{
+    "COMPANY_NAME": "Công ty CP Công Nghiệp và Dịch Vụ Đông Dương",
+    "COMPANY_CONTACT": "Contact",
+
+    "MENU_TOP_HOME": "Home",
+    "MENU_TOP_SERVICES": "Dịch Vụ",
+
+    "COM_BUTTON_CONFIRM": "Ok",
+    "COM_BUTTON_CLOSE": "Close",
+    "COM_BUTTON_CANCEL": "Cancel",
+
+    "MSG400": "Something went wrong.",
+    "MSG401": "Error authorization required.",
+    "MSG500": "Server internal error.",
+    "MSG404": "The request not found."
+}

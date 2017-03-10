@@ -1,16 +1,33 @@
 <div class="header"
 	data-ng-controller="/controllers/shared/header">
-	<div class="el-middle header--left col-xs-2 col-sm-2">
-		<div class="header--left__company"
-			data-ng-click="dashboard()">
-			<span class="text-large text-uppercase font-bold">{{::'APP_COMPANY'|translate}}</span>
+	<div class="header--top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10">
+					<img class="header--top__company-logo" src="/img/logo.png" alt="{{::'COMPANY_NAME'|translate}}">
+					<h3 class="el-middle text-capitalize header--top__company-name">{{::'COMPANY_NAME'|translate}}</h3>
+				</div>
+				<!-- <div class="col-sm-2">
+					<button class="btn btn-primary text-right" type="button">{{::'COMPANY_CONTACT'|translate}}</button>
+				</div> -->
+			</div>
 		</div>
 	</div>
-	<div class="el-middle header--center col-xs-6 col-sm-6">
-
-	</div>
-	<div class="el-middle header--right col-xs-4 col-sm-4">
+	<div class="header--nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="header--nav__menu">
+						<li class="header--nav__menu__item">
+							<a class="text-capitalize" href="/">{{::'MENU_TOP_HOME'|translate}}</a>
+						</li>
+						<li class="header--nav__menu__item">
+							<a class="text-capitalize" href="/">{{::'MENU_TOP_SERVICES'|translate}}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 	</div>
 </div>
-
