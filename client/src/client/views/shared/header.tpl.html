@@ -25,7 +25,22 @@
 						<li class="header--nav__menu__item">
 							<a class="menu-list text-capitalize"
 								href="/"
-								data-handle-menu>{{::'MENU_TOP_SERVICES'|translate}}</a>
+								data-handle-menu="sub_menu_services">{{::'MENU_TOP_SERVICES'|translate}}</a>
+						</li>
+						<li class="header--nav__menu__item">
+							<a class="menu-list text-capitalize"
+								href="/"
+								data-handle-menu="sub_menu_products">{{::'MENU_TOP_PRODUCTS'|translate}}</a>
+						</li>
+						<li class="header--nav__menu__item">
+							<a class="menu-list text-capitalize"
+								href="/"
+								data-handle-menu>{{::'MENU_TOP_ABOUT'|translate}}</a>
+						</li>
+						<li class="header--nav__menu__item">
+							<a class="menu-list text-capitalize"
+								href="/"
+								data-handle-menu>{{::'MENU_TOP_CONTACT'|translate}}</a>
 						</li>
 					</ul>
 				</div>
@@ -33,19 +48,31 @@
 		</div>
 	</div>
 	<div class="header--nav-banner">
-		<div class="container">
+		<div class="el-middle container">
 			<div class="row">
 				<div class="col-sm-12">
-					<ul class="header--nav-banner__menu">
+					<ul class="sub-menu-list header--nav-banner__menu hidden" id="sub_menu_services">
 						<li class="header--nav-banner__menu__item">
-							<a class="sub-menu-list sub-menu__active text-capitalize"
+							<a class="sub-menu-items sub-menu__active text-capitalize"
 								href="/"
-								data-handle-sub-menu>{{::'MENU_TOP_HOME'|translate}}</a>
+								data-handle-sub-menu>{{::'SUB_MENU_SERVICES_LAPTOP'|translate}}</a>
 						</li>
 						<li class="header--nav-banner__menu__item">
-							<a class="menu-list text-capitalize"
+							<a class="sub-menu-items text-capitalize"
 								href="/"
-								data-handle-sub-menu>{{::'MENU_TOP_SERVICES'|translate}}</a>
+								data-handle-sub-menu>{{::'SUB_MENU_SERVICES_COMPRESSOR'|translate}}</a>
+						</li>
+					</ul>
+					<ul class="sub-menu-list header--nav-banner__menu hidden" id="sub_menu_products">
+						<li class="header--nav-banner__menu__item">
+							<a class="sub-menu-items sub-menu__active text-capitalize"
+								href="/"
+								data-handle-sub-menu>{{::'SUB_MENU_PRODCUTS_LAPTOP'|translate}}</a>
+						</li>
+						<li class="header--nav-banner__menu__item">
+							<a class="sub-menu-items text-capitalize"
+								href="/"
+								data-handle-sub-menu>{{::'SUB_MENU_PRODCUTS_COMPRESSOR'|translate}}</a>
 						</li>
 					</ul>
 				</div>

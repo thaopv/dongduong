@@ -1,4 +1,5 @@
 $height-logo = 70px
+$height-nav-banner = 35px;
 
 .header
 	width 100%
@@ -42,7 +43,7 @@ $height-logo = 70px
 					border-left 1px solid $blue-light-1
 
 	&--nav-banner
-		padding $padding-outline 0
+		height $height-nav-banner
 		background-color $blue-light-1
 
 		&__menu
@@ -69,6 +70,10 @@ $height-logo = 70px
 
 .menu__active
 	background-color $blue-light-1
-	color $yellow-light-1
+	cursor default
+	pointer-events none
+
+.sub-menu__active
+	color $yellow-light-1 !important
 	cursor default
 	pointer-events none
