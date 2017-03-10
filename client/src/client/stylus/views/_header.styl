@@ -1,3 +1,5 @@
+$height-logo = 70px
+
 .header
 	width 100%
 
@@ -5,7 +7,7 @@
 		padding (2 * $padding-outline) 0
 
 		&__company-logo
-			width 128px
+			height $height-logo
 
 		&__company-name
 			color $purple-light-1
@@ -28,13 +30,45 @@
 
 				a
 					display block
-					padding $padding-outline (2 * $padding-outline)
+					padding (1.5 * $padding-outline) (2 * $padding-outline)
 					text-decoration none
 					color $white
+					font-size $font-large
 
 					&:hover
-						background-color $blue-light-1
 						color $yellow-light-1
 
 				&:first-child
 					border-left 1px solid $blue-light-1
+
+	&--nav-banner
+		padding $padding-outline 0
+		background-color $blue-light-1
+
+		&__menu
+			margin 0
+			padding 0
+			list-style none
+
+			&__item
+				margin 0
+				float left
+				border-right 1px solid $blue-dark-1
+
+				a
+					display block
+					padding $padding-inline $padding-outline
+					text-decoration none
+					color $white
+
+					&:hover
+						color $yellow-light-1
+
+				&:last-child
+					border-right none
+
+.menu__active
+	background-color $blue-light-1
+	color $yellow-light-1
+	cursor default
+	pointer-events none

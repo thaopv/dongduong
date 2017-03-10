@@ -4,8 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-10">
-					<img class="header--top__company-logo" src="/img/logo.png" alt="{{::'COMPANY_NAME'|translate}}">
-					<h3 class="el-middle text-capitalize header--top__company-name">{{::'COMPANY_NAME'|translate}}</h3>
+					<img class="header--top__company-logo" src="/img/logo-company.png" alt="{{::'COMPANY_NAME'|translate}}">
 				</div>
 				<!-- <div class="col-sm-2">
 					<button class="btn btn-primary text-right" type="button">{{::'COMPANY_CONTACT'|translate}}</button>
@@ -19,15 +18,38 @@
 				<div class="col-sm-12">
 					<ul class="header--nav__menu">
 						<li class="header--nav__menu__item">
-							<a class="text-capitalize" href="/">{{::'MENU_TOP_HOME'|translate}}</a>
+							<a class="menu-list menu__active text-capitalize"
+								href="/"
+								data-handle-menu>{{::'MENU_TOP_HOME'|translate}}</a>
 						</li>
 						<li class="header--nav__menu__item">
-							<a class="text-capitalize" href="/">{{::'MENU_TOP_SERVICES'|translate}}</a>
+							<a class="menu-list text-capitalize"
+								href="/"
+								data-handle-menu>{{::'MENU_TOP_SERVICES'|translate}}</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
+	</div>
+	<div class="header--nav-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="header--nav-banner__menu">
+						<li class="header--nav-banner__menu__item">
+							<a class="sub-menu-list sub-menu__active text-capitalize"
+								href="/"
+								data-handle-sub-menu>{{::'MENU_TOP_HOME'|translate}}</a>
+						</li>
+						<li class="header--nav-banner__menu__item">
+							<a class="menu-list text-capitalize"
+								href="/"
+								data-handle-sub-menu>{{::'MENU_TOP_SERVICES'|translate}}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

@@ -4,11 +4,12 @@
 	angular.module('ecommerce').controller('/controllers/shared/header', [
 		'$scope',
 		'$location',
+		'$translate',
 		'/services/storage',
 		'/services/event-hub',
 		'/services/dispose',
-		function($scope, $location) {
-			// todo: implement logic
+		function($scope, $location, $translate, EventHub, dispose) {
+
 		},
 	]);
 })();
