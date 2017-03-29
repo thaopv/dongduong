@@ -6,7 +6,18 @@
 
 	"MENU_TOP_HOME": "Home",
 	"MENU_TOP_SERVICES": "Dịch Vụ",
+	"MENU_TOP_PRODUCTS": "Sản Phẩm",
+	"MENU_TOP_CONTACT": "Liên Hệ",
+	"MENU_TOP_ABOUT": "Giới thiệu",
 
+	"SUB_MENU_PRODCUTS_LAPTOP": "Link kiện Laptops",
+	"SUB_MENU_PRODCUTS_COMPRESSOR": "Máy nén khí",
+	"SUB_MENU_SERVICES_LAPTOP": "Sửa chữa - Bảo dưỡng Laptops",
+	"SUB_MENU_SERVICES_COMPRESSOR": "Sửa chữa - Bảo dưỡng Máy nén khí",
+
+	"COM_BUTTON_CONFIRM": "Ok",
+	"COM_BUTTON_CLOSE": "Close",
+	"COM_BUTTON_CANCEL": "Cancel",
 	"COM_BUTTON_CONFIRM": "Ok",
 	"COM_BUTTON_CLOSE": "Close",
 	"COM_BUTTON_CANCEL": "Cancel",

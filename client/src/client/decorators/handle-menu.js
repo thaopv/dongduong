@@ -4,33 +4,42 @@
 	angular.module('ecommerce').directive('handleMenu', [
 		'@lodash',
 		'@jquery',
-		'/services/json-helper',
-		'/services/event-hub',
-		'/data/config',
-		function(_, $, jsonHelper, EventHub, config) {
+		function(_, $) {
 			return {
 				link: function($scope, element, attrs) {
-					var tabActive = 'menu__active';
+					var menuActive = 'menu__active';
+					var menuList = 'menu-list';
+					var subMenuList = 'sub-menu-list';
+					var hiddenClass = 'hidden';
 
-					var activeTab = function(tab) {
-						var data = jsonHelper.jsonParse(tab);
-						if (!data) {
+					var hiddenAllSubMenu = function() {
+						$('.' + subMenuList).addClass(hiddenClass);
+					};
+
+					var activeSubmenu = function(idSubMenu) {
+						hiddenAllSubMenu();
+
+						if (!idSubMenu) {
 							return;
 						}
 
-						EventHub.emit('active:menu', data);
+						$('#' + idSubMenu).removeClass(hiddenClass);
 					};
 
-					var removetabActive = function() {
-						$('.menu-list').removeClass(tabActive);
+					var activeMenu = function(idSubMenu) {
+						activeSubmenu(idSubMenu);
 					};
 
-					var tabActiveElement = function() {
-						element.addClass(tabActive);
+					var removeMenuActive = function() {
+						$('.' + menuList).removeClass(menuActive);
+					};
+
+					var menuActiveElement = function() {
+						element.addClass(menuActive);
 					};
 
 					var isActive = function() {
-						return element.hasClass(tabActive);
+						return element.hasClass(menuActive);
 					};
 
 					var handleClickEvent = function() {
@@ -38,10 +47,10 @@
 							return;
 						}
 
-						removetabActive();
-						tabActiveElement();
+						removeMenuActive();
+						menuActiveElement();
 
-						activeTab(attrs.handleTab);
+						activeMenu(attrs.handleMenu);
 					};
 
 					element.bind('click', handleClickEvent);
