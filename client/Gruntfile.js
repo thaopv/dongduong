@@ -151,6 +151,14 @@ module.exports = function(grunt) {
 					expand: true
 				}],
 			},
+			plugin: {
+				files: [{
+					cwd: assets.copy.plugin.cwd,
+					src: assets.copy.plugin.src,
+					dest: assets.copy.plugin.dest,
+					expand: true,
+				}],
+			},
 			fontawesome: {
 				files: [{
 					cwd: './node_modules/font-awesome-stylus/fonts',
@@ -210,7 +218,8 @@ module.exports = function(grunt) {
 					src: [
 						'**/*.*',
 					],
-					dest: 'build/.tmp/img',
+					dest: 'build/img',
+					// dest: 'build/.tmp/img',
 					expand: true,
 				}],
 			},
@@ -308,6 +317,7 @@ module.exports = function(grunt) {
 			dev: {
 				files: {
 					'build/index.html': _.concat(assets.plugins, [
+						'bower_components/particles.js/particles.min.js',
 						'src/client/main.js',
 						'src/client/**/*.js',
 						'build/.tmp/**/*.js',
@@ -417,6 +427,7 @@ module.exports = function(grunt) {
 		'translate',
 		'ngtemplates:html',
 		'uglify:prod',
+		'copy:plugin',
 		'filerev:js',
 		'injector:build',
 		'clean:tmp',

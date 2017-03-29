@@ -2,7 +2,6 @@
 	"plugins" : [
 		"bower_components/jquery/dist/jquery.min.js",
 		"bower_components/lodash/dist/lodash.min.js",
-		"bower_components/particles.js/particles.min.js",
 		"bower_components/angular/angular.min.js",
 		"bower_components/angular-resource/angular-resource.min.js",
 		"bower_components/angular-sanitize/angular-sanitize.min.js",
@@ -25,6 +24,13 @@
 				"index.html"
 			],
 			"dest": "build/"
+		},
+		"plugin": {
+			"cwd": "bower_components/particles.js",
+			"src": [
+				"particles.min.js"
+			],
+			"dest": "build/.tmp/js_min/_plugins"
 		}
 	}
 }

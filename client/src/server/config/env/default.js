@@ -1,6 +1,6 @@
 exports.name = 'config.env.defaults';
 
 exports.value = {
-	port: 8080,
+	port: 9669,
 	bootstrapFile: '/build/index.html',
 };
