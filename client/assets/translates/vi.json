@@ -1,16 +1,18 @@
 {
-    "COMPANY_NAME": "Công ty CP Công Nghiệp và Dịch Vụ Đông Dương",
-    "COMPANY_CONTACT": "Contact",
+	"COMPANY_NAME": "Công ty CP Công Nghiệp và Dịch Vụ Đông Dương",
+	"COMPANY_ABOUT": "Chất lượng - tạo niềm tin. Hãy đến với Đông Đương, để có những dịch vụ chăm sóc, bảo dưỡng và những sản phẩm tốt nhất.",
+	"COMPANY_CONTACT_US": "Contact Us",
+	"COMPANY_EMAIL": "hapham.sv@gmail.com",
 
-    "MENU_TOP_HOME": "Home",
-    "MENU_TOP_SERVICES": "Dịch Vụ",
+	"MENU_TOP_HOME": "Home",
+	"MENU_TOP_SERVICES": "Dịch Vụ",
 
-    "COM_BUTTON_CONFIRM": "Ok",
-    "COM_BUTTON_CLOSE": "Close",
-    "COM_BUTTON_CANCEL": "Cancel",
+	"COM_BUTTON_CONFIRM": "Ok",
+	"COM_BUTTON_CLOSE": "Close",
+	"COM_BUTTON_CANCEL": "Cancel",
 
-    "MSG400": "Something went wrong.",
-    "MSG401": "Error authorization required.",
-    "MSG500": "Server internal error.",
-    "MSG404": "The request not found."
+	"MSG400": "Something went wrong.",
+	"MSG401": "Error authorization required.",
+	"MSG500": "Server internal error.",
+	"MSG404": "The request not found."
 }

@@ -1,1 +1,23 @@
-<h1>This is dashboard page</h1>
+<div id="particles-js"></div>
+
+<div class="dashboard-content">
+	<div class="row dashboard-content--wrapper">
+		<div class="col-sm-12">
+			<div class="dashboard-content__logo">
+				<img src="img/logo.png">
+				<div class="dashboard-content__logo__name text-capitalize">
+					<h1>{{::'COMPANY_NAME'|translate}}</h1>
+				</div>
+			</div>
+			<div class="dashboard-content__about text-capitalize">
+				<h4>{{::'COMPANY_ABOUT'|translate}}</h4>
+			</div>
+			<div class="dashboard-content__contact">
+				<a href="mailto:{{::'COMPANY_EMAIL'|translate}}">
+					<h3 class="text-capitalize">{{::'COMPANY_CONTACT_US'|translate}}</h3>
+					<div class="dashboard-content__contact--email text-lowercase">{{::'COMPANY_EMAIL'|translate}}</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

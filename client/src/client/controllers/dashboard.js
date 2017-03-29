@@ -3,8 +3,13 @@
 
 	angular.module('ecommerce').controller('/controllers/dashboard', [
 		'$scope',
-		function($scope) {
-			// your code
+		'@particles',
+		function($scope, particles) {
+			function active() {
+				particles.load('particles-js', '/particles/config.json');
+			}
+
+			active();
 		},
 	]);
 })();

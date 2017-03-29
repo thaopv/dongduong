@@ -1,0 +1,81 @@
+canvas
+	display block
+	vertical-align bottom
+
+#particles-js
+	position fixed
+	top 0
+	left 0
+	bottom 0
+	right 0
+	overflow hidden
+	background-color $white
+
+@keyframes draw
+	from
+		stroke-dasharray 200 960
+		stroke-dashoffset -580
+		stroke-width 6px
+		stroke #00E676
+
+	to
+		stroke-dasharray 960
+		stroke-dashoffset 0
+		stroke-width 2px
+		stroke #FAFAFA
+
+@keyframes rdraw
+	from
+		stroke-dasharray 960
+		stroke-dashoffset 0
+		stroke-width 2px
+		stroke #FAFAFA
+
+	to
+		stroke-dasharray 200 960
+		stroke-dashoffset -580
+		stroke-width 6px
+		stroke #00E676
+
+.dashboard-content
+	position absolute
+	z-index $layout-1
+	top 50%
+	transform translateY(-50%)
+	right 0
+	left 0
+	text-align center
+
+	&--wrapper
+		padding (5 * $padding-outline) 0
+		background-color rgba(0,0,0,.6)
+		color $white
+
+	&__logo
+		img
+			width 128px
+
+	&__about
+		margin-top 2 * $margin-block
+		margin-bottom (5 * $margin-block)
+
+	&__contact
+		width 400px
+		border 1px solid #007100
+		color $white
+		margin 0 auto
+		transition background .3s, border .5s
+
+		&:hover
+			border 1px solid #FF4700
+			background-color rgba(0, 0, 0, .5)
+
+		&--email
+			padding-bottom (2 * $padding-outline)
+
+		a
+			text-align: center
+			display block
+			color inherit
+			text-decoration none
+

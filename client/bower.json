@@ -24,6 +24,7 @@
     "angular-route": "1.5.8",
     "angular-cookies": "1.6.2",
     "lodash": "4.16.4",
-    "jquery": "3.1.1"
+    "jquery": "3.1.1",
+    "particles.js": "2.0.0"
   }
 }

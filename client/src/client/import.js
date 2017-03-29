@@ -3,5 +3,6 @@
 
 	angular.module('import', [])
 			.constant('@lodash', window._)
-			.constant('@jquery', window.jQuery);
+			.constant('@jquery', window.jQuery)
+			.constant('@particles', window.particlesJS);
 })();
